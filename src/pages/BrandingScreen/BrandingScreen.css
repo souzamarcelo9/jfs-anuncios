@@ -1,0 +1,320 @@
+/* Main Container */
+.branding-screen-container {
+  display: flex;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 15rem;
+  min-width:100vh;
+}
+
+.branding-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Configuration Column */
+.config-column {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.config-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.branding-title {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.branding-subtitle {
+  color: #666;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.config-section {
+  margin-bottom: 2rem;
+}
+
+.config-section h2 {
+  color: #333;
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.config-section p {
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+/* Form Elements */
+.supermarket-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Color Palette Grid */
+.palette-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.palette-option {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.palette-option.selected {
+  border-color: #4a6bff;
+  box-shadow: 0 0 0 2px rgba(74, 107, 255, 0.2);
+}
+
+.palette-colors {
+  display: flex;
+  height: 30px;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.palette-colors div {
+  flex: 1;
+}
+
+/* Logo Upload */
+.logo-upload-box {
+  border: 2px dashed #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.logo-upload-box:hover {
+  border-color: #4a6bff;
+}
+
+.logo-upload-label {
+  cursor: pointer;
+  display: block;
+}
+
+.logo-upload-label input {
+  display: none;
+}
+
+.logo-upload-label img {
+  max-width: 100%;
+  max-height: 120px;
+  display: block;
+  margin: 0 auto;
+}
+
+.upload-instructions {
+  color: #666;
+}
+
+.upload-instructions svg {
+  width: 48px;
+  height: 48px;
+  fill: currentColor;
+  margin-bottom: 0.5rem;
+}
+
+.file-requirements {
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 0.25rem;
+}
+
+/* Preview Column */
+.preview-column {
+  position: sticky;
+  top: 2rem;
+  height: fit-content;
+}
+
+.preview-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  min-height: 100vh;
+  min-width:60vh;
+}
+
+.preview-container h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.branding-preview {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid;
+}
+
+.preview-header {
+  padding: 1.5rem;
+  text-align: center;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.preview-logo {
+  max-width: 200px;
+  max-height: 80px;
+}
+
+.preview-body {
+  padding: 1.5rem;
+  background: white;
+}
+
+.promo-banner {
+  padding: 0.75rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0rem;
+  border-radius: 4px;
+}
+
+.product-preview {
+  display: flex;
+  gap: 1rem;
+  align-items: center;  
+  justify-content: center;
+}
+
+.product-image {
+  width: 60px;
+  height: 60px;
+  background-image:url("https://krug.fbitsstatic.net/img/p/pretensao-wood-aged-barleywine-355ml-70332/256989-1.jpg?w=500&h=500&v=no-value");
+  border-radius: 6px; 
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-info h4 {
+  margin: 0 0 0.25rem 0;
+}
+
+.price {
+  font-weight: bold;
+  margin: 0.25rem 0;
+  color: #2e7d32;
+}
+
+.category {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0.25rem 0;
+}
+
+/* Action Buttons */
+.config-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+  padding-top: 2rem;
+}
+
+.back-button {
+  padding: 0.75rem 1.5rem;
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.save-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  flex: 1;
+  transition: all 0.2s ease;
+}
+
+.save-button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.save-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.branding-hint {
+  color: #e00d0d;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.box-hint {
+    background-color: #03770d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 600px;
+  }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .branding-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .preview-column {
+    position: static;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .palette-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .config-actions {
+    flex-direction: column;
+  }
+}
