@@ -11,6 +11,7 @@ import { useParams } from 'react-router';
 import axios from "axios";
 import { useLocation } from 'react-router-dom';
 import { useAuth } from '../../Context/AuthContext';
+import Sidebar from '../../components/Sidebar/Sidebar';
 
 // 🎯 Simulação de dados
 /* const mockVideos = [
@@ -145,6 +146,8 @@ const dataHoraBrasil = dataAtual.toLocaleString('pt-BR', {
   }, [videos]);
 
   return (
+    <>
+    {/* <Sidebar /> */}
     <DashboardContainer>
       <Heading>👋Bem-vindo - {dataHoraBrasil}</Heading>
 
@@ -184,5 +187,6 @@ const dataHoraBrasil = dataAtual.toLocaleString('pt-BR', {
         </CreateButton>
     </Section>
     </DashboardContainer>
+    </>
   );
 }

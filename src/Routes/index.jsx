@@ -11,6 +11,7 @@ import BrandingScreen from '../pages/BrandingScreen';
 import PurchaseOrderForm from '../pages/PurchaseOrderForm';
 import ConfirmationScreen from '../pages/ConfirmationScreen/ConfirmationScreen';
 import Dashboard from '../pages/Dashboard';
+import AdminUsers from '../pages/AdminUsers/AdminUsers';
 
 export default function Routes() {
     return (
@@ -29,6 +30,14 @@ export default function Routes() {
                     element={
                         <PrivateRoute>
                             <Home />
+                        </PrivateRoute>
+                    }
+                />
+                <Route
+                    path="/admin"
+                    element={
+                        <PrivateRoute>
+                            <AdminUsers />
                         </PrivateRoute>
                     }
                 />

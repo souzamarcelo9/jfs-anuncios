@@ -47,7 +47,7 @@ export default function Home() {
             <SectionStyled>
                 <Button
                     title="Continuar"
-                    onClick={() =>console.log(currentUser)}
+                    onClick={() =>navigate("/dashboard")}
                 />
                 <Button title="LogOut" onClick={handleLogOut} disabled={loading} />
             </SectionStyled>
